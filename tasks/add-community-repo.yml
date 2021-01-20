@@ -1,0 +1,10 @@
+---
+
+- name: Add no subscription repo
+  apt_repository:
+    repo: "deb http://download.proxmox.com/debian/pve {{ ansible_distribution_release }} pve-no-subscription"
+    state: present
+
+- name: Run the equivalent of "apt-get update" as a separate step
+  apt:
+    update_cache: yes

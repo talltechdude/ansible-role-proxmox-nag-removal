@@ -7,3 +7,7 @@
 - name: remove enterprise repos
   include: remove-enterprise-repo.yml
   when: remove_enterprise_repo
+
+- name: setup community repo
+  include_tasks: add-community-repo.yml
+  when: enable_community_repo

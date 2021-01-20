@@ -1,4 +1,5 @@
 ---
 
-remove_nag: True
-remove_enterprise_repo: True
+remove_nag: true
+remove_enterprise_repo: true
+enable_community_repo: true
